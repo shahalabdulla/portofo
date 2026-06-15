@@ -60,32 +60,15 @@ function About() {
           </div>
 
           {/* Right: Photo + Stats */}
-          <div className="about-right">
-            <div className="about-photo-wrapper">
-              <img src={profileImg} alt="Shahal Abdulla" className="about-photo" />
-              <div className="photo-border"></div>
-            </div>
 
-            <div className="about-stats">
-              <div className="stat-item">
-                <span className="stat-number">5+</span>
-                <span className="stat-label">Projects Built</span>
-              </div>
-              <div className="stat-divider"></div>
-              <div className="stat-item">
-                <span className="stat-number">MERN</span>
-                <span className="stat-label">Primary Stack</span>
-              </div>
-              <div className="stat-divider"></div>
-              <div className="stat-item">
-                <span className="stat-number">2</span>
-                <span className="stat-label">Specializations</span>
-              </div>
-            </div>
+          <div className="about-photo-wrapper">
+            <img src={profileImg} alt="Shahal Abdulla" className="about-photo" />
+            <div className="photo-border"></div>
           </div>
 
-        </div>
-      </div>
+        </div>{/* .about-content */}
+
+      </div>{/* .container */}
     </section>
   );
 }
