@@ -89,7 +89,7 @@
 .project-image-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(109, 74, 255, 0.08);
+  background: rgba(109, 74, 255, 0.07);
   transition: opacity 0.3s ease;
 }
 
@@ -106,7 +106,7 @@
 
 .project-label {
   color: #6d4aff;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -123,7 +123,7 @@
 
 .project-subtitle {
   color: #6d4aff;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   margin: 0;
 }
@@ -133,12 +133,12 @@
   border: 1px solid #ece8ff;
   border-radius: 10px;
   padding: 20px 22px;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .project-description p {
   color: #444;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   line-height: 1.8;
   margin: 0;
 }
@@ -163,14 +163,13 @@
   line-height: 1;
 }
 
-/* fallback for icons without color */
 .tech-icon-item i.devicon-express-original,
 .tech-icon-item i.devicon-vercel-plain {
   color: #111827;
 }
 
 .tech-icon-item span {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: #777;
   font-weight: 500;
   white-space: nowrap;
@@ -179,7 +178,8 @@
 /* ── Links ── */
 .project-links {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 14px;
   margin-top: 8px;
 }
 
@@ -204,6 +204,20 @@
   color: #6d4aff;
   border-color: #6d4aff;
   transform: translateY(-2px);
+}
+
+/* Desktop App Badge */
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: #f8f7ff;
+  border: 1px solid #ece8ff;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6d4aff;
+  letter-spacing: 0.5px;
 }
 
 /* ── Responsive ── */

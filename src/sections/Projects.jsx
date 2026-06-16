@@ -1,5 +1,6 @@
 import "./Projects.css";
 import ecomma from "../assets/ecomma.png";
+import electron from "../assets/electron.png";
 
 const projects = [
   {
@@ -22,6 +23,26 @@ const projects = [
     github: "https://github.com/shahalabdulla/ecomma-frontend",
     live: "https://ecomma-frontend.vercel.app",
     reverse: false,
+  },
+  {
+    id: 2,
+    label: "Collaborative Project",
+    title: "HyperLink Sentinel",
+    subtitle: "Phishing & Quishing Defense Suite",
+    description:
+      "A system-wide OS-level cybersecurity tool built for Cyber Carnival 2026. Intercepts malicious URLs from the clipboard and QR codes before the browser executes them — using a multi-layer threat engine powered by Google Safe Browsing, VirusTotal (70+ vendors), and a headless Puppeteer sandbox for safe previewing.",
+    image: electron,
+    alt: "HyperLink Sentinel cybersecurity dashboard screenshot",
+    techIcons: [
+      { class: "devicon-electron-original colored", name: "Electron.js" },
+      { class: "devicon-react-original colored", name: "React.js" },
+      { class: "devicon-nodejs-plain colored", name: "Node.js" },
+      { class: "devicon-mongodb-plain colored", name: "MongoDB" },
+      { class: "devicon-puppeteer-plain colored", name: "Puppeteer" },
+    ],
+    github: "https://github.com/Navsajan/HyperLink-Sentinel",
+    live: null,
+    reverse: true,
   },
 ];
 
@@ -67,7 +88,7 @@ function Projects() {
 
               {/* Image */}
               <a
-                href={project.live}
+                href={project.live || project.github}
                 target="_blank"
                 rel="noreferrer"
                 className="project-image-link"
@@ -113,15 +134,20 @@ function Projects() {
                   >
                     <GithubIcon />
                   </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                    aria-label="Live Demo"
-                  >
-                    <ExternalIcon />
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                      aria-label="Live Demo"
+                    >
+                      <ExternalIcon />
+                    </a>
+                  )}
+                  {!project.live && (
+                    <span className="project-badge">Desktop App</span>
+                  )}
                 </div>
               </div>
 
