@@ -5,12 +5,13 @@ function Navbar() {
     <nav className="navbar">
       <div className="container nav-container">
 
-        <h2 className="logo">SHAHAL.</h2>
+        <a href="#" className="logo">
+          <img src="/favicon.ico" alt="Shahal Abdulla" className="nav-logo-img" />
+        </a>
 
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
