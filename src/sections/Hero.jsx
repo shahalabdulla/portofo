@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { useState, useEffect } from "react";
-import profile from "../assets/profile.jpg";
+import profile_pic from "../assets/prof.jpeg";
 
 function GithubIcon() {
   return (
@@ -54,6 +54,7 @@ function useTypingEffect(words) {
     } else if (deleting && displayed.length > 0) {
       timeout = setTimeout(() => setDisplayed(current.slice(0, displayed.length - 1)), 45);
     } else {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setDeleting(false);
       setWordIndex((i) => (i + 1) % words.length);
     }
@@ -146,7 +147,7 @@ function Hero() {
         </div>
 
         <div className="hero-right">
-          <img src={profile} alt="Shahal Abdulla" />
+          <img src={profile_pic} alt="Shahal Abdulla" />
         </div>
 
       </div>
