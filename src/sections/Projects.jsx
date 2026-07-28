@@ -1,6 +1,7 @@
 import "./Projects.css";
 import ecomma from "../assets/ecomma.png";
 import electron from "../assets/electron.png";
+import encoImage from "../assets/enco (1).png";
 
 const projects = [
   {
@@ -24,6 +25,7 @@ const projects = [
     live: "https://ecomma-frontend.vercel.app",
     reverse: false,
   },
+  
   {
     id: 2,
     label: "Collaborative Project",
@@ -44,6 +46,27 @@ const projects = [
     live: null,
     reverse: true,
   },
+  {
+    id: 3,
+    label: "Personal Project",
+    title: "Stegno seed",
+    subtitle: "Image Steganography Tool",
+    description:
+      "A research-oriented image steganography system that combines computer vision, modern cryptography, and randomized Least Significant Bit (LSB) embedding to securely conceal messages inside digital images. The project extends classical LSB steganography by introducing CNN-guided randomized embedding and authenticated encryption while evaluating its effectiveness through image quality metrics and classical steganalysis techniques.",
+    image: encoImage,
+    alt: "Stegno seed image steganography tool screenshot",
+    techIcons: [
+      { class: "devicon-python-plain colored", name: "Python" },
+      { class: "devicon-tensorflow-plain colored", name: "TensorFlow" },
+      { class: "devicon-ResNet50-plain colored", name: "ResNet50" },
+      { class: "devicon-keras-plain colored", name: "Keras" },
+      { class: "devicon-Numpy-plain colored", name: "NumPy" },
+    ],
+    github: "https://github.com/shahalabdulla/stegno_seed",
+    live: null,
+    reverse: false,
+  },
+
 ];
 
 function GithubIcon() {
